@@ -151,7 +151,7 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-  let newStr = str.reduce((a,b)=> {
+  let newStr = Array.from(str).reduce((a,b)=> {
     a = b + a;
     return a;
   },'')
