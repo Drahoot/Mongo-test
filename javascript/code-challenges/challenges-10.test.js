@@ -27,8 +27,17 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
-  // Solution code here...
-  
+  let highestNum = 0;
+  for(let i = 0; i < matrix.length; i++){
+    let currentRow = matrix[i];
+    for(let j = 0; j < currentRow.length; j++){
+      let currentNum = currentRow[j];
+      if (currentNum > highestNum){
+        highestNum = currentNum;
+      }
+    }
+  }
+  return highestNum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,6 +56,15 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let sum = 0;
+  for(let i = 0; i < matrix.length; i++){
+    let currentRow = matrix[i];
+    for(let j = 0; j < currentRow.length; j++){
+      let currentNum = currentRow[j];
+      sum += currentNum;
+    }
+  }
+  return sum;
 };
 
 
@@ -74,7 +92,17 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-
+  let totalsArray = [];
+  for (let i = 0; i < hoursOpen.length; i++) {
+    totalsArray.push(0);
+  }
+  for (let j = 0; j < cookieStores.length; j++) {
+    let currentStore = cookieStores[j];
+    for (let k = 0; k < currentStore.length; k++) {
+      totalsArray[k]+= currentStore[k];
+    }
+  }
+  return totalsArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -89,6 +117,12 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let resultArr = [];
+  data.forEach((datum, index) => {
+    let currentObj = {'sales': `${datum} cookies`, 'time': hours[index]};
+    resultArr.push(currentObj);
+  })
+  return resultArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,6 +148,18 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  let price = null;
+  for(let i = 0; i < arr.length; i++){
+    let currentObj = arr[i];
+    let currentObjItems = currentObj.items;
+    for(let j = 0; j < currentObjItems.length; j++){
+      let currentProduct = currentObjItems[j];
+      if(currentProduct.name === 'Treats'){
+        price = currentProduct.quantity;
+      }
+    }
+  }
+  return price;
 };
 
 /* ------------------------------------------------------------------------------------------------
