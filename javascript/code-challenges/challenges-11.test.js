@@ -39,9 +39,15 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  for(let i = 0; i < input[i]; i++){
-    for(let j = 0; j < input[i][j])
-  }
+  return input.reduce((acc, currentVal) => {
+    const rowCount = currentVal.reduce((innerAcc, innerCurVal) => {
+      if(innerCurVal === target){
+        return innerAcc + 1;
+      }
+      return innerAcc
+    },0)
+    return acc + rowCount;
+  }, 0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -158,6 +164,15 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  let array = [];
+  data.map(i => {
+    if (i.gender === 'male' || i.gender === 'female') {
+      array.push(i.name);
+      array.push('and')
+    }
+  })
+  array.splice(-1, 1);
+  return array.join(' ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -168,6 +183,8 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
+  let result = data.sort((a,b) => a.height - b.height)
+  return result[0].name
 };
 
 /* ------------------------------------------------------------------------------------------------
