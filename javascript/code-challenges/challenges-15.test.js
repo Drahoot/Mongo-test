@@ -12,9 +12,11 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 const screenForNames = (arr) => {
   // Solution code here...
+
   let reg = /^(Mr\.|Mrs\.|Ms\.|Dr\.)\s[A-Za-z]+/;
 
   return arr.filter(str => reg.test(str));
+
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -27,7 +29,9 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 
 const toTitleCase = (arr) => {
   // Solution code here...
+
   return arr.map(str => str.charAt(0).toUpperCase() + str.substring(1));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,9 +107,11 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
+
   let luke = arr.find(character => character.name === 'Luke Skywalker');
 
   return arr.filter(character => parseInt(character.mass) > parseInt(luke.mass)).map(character => character.name).join(' - ')
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -124,6 +130,7 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
+
   return arr.sort((a,b) => {
     if(a[property] < b[property]){
       return -1;
@@ -133,6 +140,7 @@ const sortBy = (property, arr) => {
       return 0;
     }
   })
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,8 +157,10 @@ https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
   // Solution code here...
+
   let reg = /https:\/\//;
   return reg.test(url);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -174,6 +184,7 @@ Here is a sample board:
 
 const detectTicTacToeWin = (board) => {
   // Solution code here...
+
   let helpCheck = (row1,col1,row2,col2,row3,col3) => {
     return board[row1][col1] !== '' && 
     board[row1][col1] === board[row2][col2] &&
@@ -192,6 +203,7 @@ const detectTicTacToeWin = (board) => {
   if(helpCheck(0, 2, 1, 1, 2, 0)) return true;
 
   return false;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
