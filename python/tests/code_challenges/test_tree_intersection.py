@@ -2,7 +2,7 @@ import pytest
 from codefellows.dsa.binary_tree import BinaryTree
 from code_challenges.tree_intersection import tree_intersection
 
-
+@pytest.mark.skip("TODO")
 def test_exists():
     assert tree_intersection
 
