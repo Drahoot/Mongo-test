@@ -17,21 +17,21 @@ def test_empty_head():
     assert linked.head is None
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_populated_head():
     linked = LinkedList()
     linked.insert("apple")
     assert linked.head.value == "apple"
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_to_string_empty():
     linked_list = LinkedList()
 
     assert str(linked_list) == "NULL"
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_to_string_single():
     linked_list = LinkedList()
 
@@ -40,7 +40,7 @@ def test_to_string_single():
     assert str(linked_list) == "{ apple } -> NULL"
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_to_string_double():
     linked_list = LinkedList()
 
@@ -53,7 +53,7 @@ def test_to_string_double():
     assert str(linked_list) == "{ banana } -> { apple } -> NULL"
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_includes_true():
     linked_list = LinkedList()
 
@@ -64,7 +64,7 @@ def test_includes_true():
     assert linked_list.includes("apple")
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_includes_false():
     linked_list = LinkedList()
 
@@ -73,3 +73,90 @@ def test_includes_false():
     linked_list.insert("banana")
 
     assert not linked_list.includes("cucumber")
+
+def test_add_node():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [1, 3, 2, 5]
+
+    assert actual_list == expected_list
+
+
+def test_multiple_nodes():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    liked_list.append(7)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [1, 3, 2, 5, 7]
+
+    assert actual_list == expected_list
+
+def test_insert_middle():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [1, 5, 3, 2]
+
+    assert actual_list == expected_list
+
+def test_insert_front():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [5, 1, 3, 2]
+
+    assert actual_list == expected_list
+
+def test_insert_middle_back():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [1, 3, 5, 2]
+
+    assert actual_list == expected_list
+
+def test_insert_middle_front():
+    linked_list = LinkedList()
+
+    linked_list.append(5)
+
+    actual_list = [1, 3, 2]
+
+    expected_list = [1, 3, 2, 5]
+
+    assert actual_list == expected_list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

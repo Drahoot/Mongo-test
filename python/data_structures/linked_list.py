@@ -32,6 +32,20 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def append(self):
+        current = self.head
+        while current:
+            current = current.next
+
+        new_node = Node(value)
+        new_node
+
+    def insertBefore(self, value):
+
+
+    def insertAfter(self, value):
+        pass
+
 
 class Node:
     def __init__(self, value, next=None):
