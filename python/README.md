@@ -74,3 +74,8 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
+- [02: Array-Insert-Shift](array-shift-insert/readme.md)
+- [03: Array-Binary-Search](array-binary-search/readme.md)
+- [07: Linked-List-Kth](docs/linked_list_kth/README.md)
+- [08: Linked-List-Zip](docs/linked_list_zip/README.md)
