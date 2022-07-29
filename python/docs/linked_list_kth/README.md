@@ -22,3 +22,8 @@ k-th value from the end of a linked list.
                 if i == loop_count - 1:
                     return current.value
                 current = current.next
+
+## Collaborators
+- Riki Plaza
+- Alec Torres
+- Jamall Malik

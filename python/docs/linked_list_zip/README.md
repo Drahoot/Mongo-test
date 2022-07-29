@@ -22,3 +22,9 @@ Zip two linked lists.
                 return a
 
         return a
+
+
+## Collaborators
+- Riki Plaza
+- Alec Torres
+- Jamall Malik
