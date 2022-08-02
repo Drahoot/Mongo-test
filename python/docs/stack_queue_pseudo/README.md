@@ -17,3 +17,9 @@ Implement a Queue using two Stacks.
         while self.inbox.top:
             self.outbox.push(self.inbox.pop())
         return self.outbox.pop()
+
+
+## Contributors
+- Riki Plaza
+- Alec Torres
+- Jamall Malik
