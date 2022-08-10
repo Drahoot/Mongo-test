@@ -83,6 +83,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [11: Stack-Queue-Psuedo](docs/stack_queue_pseudo/README.md)
 - [12: Stack-Queue-Animal-Shelter](docs/stack_queue_animal_shelter/README.md)
 - [13: Stack-Queue-Brackets](docs/stack_queue_brackets)
+- [17: Tree-Max](docs/tree_max)
 
 
 
