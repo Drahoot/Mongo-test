@@ -1,5 +1,8 @@
 # Blog Notes: Quick Sort
 
+### Link to quick_sort
+[quick_sort.py](python/code_challenges/quick_sort.py)
+
 ## Pseudo Code
 ```
 ALGORITHM QuickSort(arr, left, right)
@@ -51,3 +54,5 @@ Example List: [8,23,4,16]
 - Third Passthrough:
   > - left: 0, right: 1, list: [4,8,16,23], position: 0
   > - The final swapping happens here, leaving a fully sorted list.
+
+
