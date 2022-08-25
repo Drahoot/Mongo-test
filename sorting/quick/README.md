@@ -1,7 +1,7 @@
 # Blog Notes: Quick Sort
 
 ### Link to quick_sort
-[quick_sort.py](python/code_challenges/quick_sort.py)
+[quick_sort.py](https://github.com/RyanLMcMillan/data-structures-and-algorithms/blob/main/python/code_challenges/quick_sort.py)
 
 ## Pseudo Code
 ```
