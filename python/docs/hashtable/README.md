@@ -16,4 +16,7 @@
   - Arguments: key
   - Returns: Index in the collection for that key
 
-
+## Collaborators
+- Riki Plaza
+- Jamall Malik
+- Alec Torres
