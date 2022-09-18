@@ -1,21 +1,25 @@
-def quick_sort(arr, left, right):
+def quick_sort(nums, left, right):
     if left < right:
-        pos = partition(arr,left,right)
-        quick_sort(arr, left, pos - 1)
-        quick_sort(arr, right, pos + 1)
+        position = partition(nums, left, right)
+        quick_sort(nums, left, position - 1)
+        quick_sort(nums, position + 1, right)
+    return nums
 
-def partition(arr, left, right):
-    piv = arr[right]
+
+def partition(nums, left, right):
+    pivot = nums[right]
     low = left - 1
     for i in range(left, right):
-        if arr[i] <= piv:
+        if nums[i] <= pivot:
             low += 1
-            swap(arr, i, low)
+            swap(nums, i, low)
 
-    swap(arr, right, low + 1)
+    swap(nums, right, low + 1)
     return low + 1
 
-def swap(arr, i, low):
-    temp = arr[i]
-    arr[i] = arr[low]
-    arr[low] = temp
+
+def swap(nums, i, low):
+    temp = nums[i]
+    nums[i] = nums[low]
+    nums[low] = temp
+    return nums
