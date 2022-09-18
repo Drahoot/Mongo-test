@@ -16,6 +16,12 @@
   - Arguments: key
   - Returns: Index in the collection for that key
 
+## Challenge
+Create your own new data structure: Hash Tables! Cover it in tests and make sure it's all in working order for future use.
+
+## Approach & Efficiency
+Hash Tables have a time/space complexity of O(1)
+
 ## Collaborators
 - Riki Plaza
 - Jamall Malik
