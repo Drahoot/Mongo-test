@@ -55,4 +55,5 @@ Example List: [8,23,4,16]
   > - left: 0, right: 1, list: [4,8,16,23], position: 0
   > - The final swapping happens here, leaving a fully sorted list.
 
-
+## Approach & Efficiency
+ The O notation for space here is O(N^2) because it is using recursive functions and time is O(N) because it will have more steps to achieve for every item in the list that is passed in.
